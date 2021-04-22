@@ -1,0 +1,21 @@
+<!--Home Paragraphs-->
+<div class="info container">
+    <h2>Contact whith us</h2>
+    <form class="contact-form">
+        <input type="text" name="name" placeholder="Write your name" title="¡Name only accepts letters and blanks!"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+        <input type="email" name="email" placeholder="Write your email" title="¡Wrong email!"
+            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+        <input type="text" name="subject" placeholder="Comment subject" title="¡The subject is required!" required>
+        <textarea name="comments" cols="50" rows="5" placeholder="Write your comments"
+            title="¡Your comment must not exceed 255 characters!" data-pattern="^.{1,255}$" required></textarea>
+        <input type="submit" value="Send">
+        <div class="contact-form-loader none">
+            <img src="/images/ajax-loader.gif" alt="Loading">
+        </div>
+        <div class="contact-form-response none">
+            <p>The data has been sent.</p>
+        </div>
+    </form>
+</div>
+<!--End Home Paragraphs-->

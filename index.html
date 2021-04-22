@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>RUIPI</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="pull-left visible-md visible-lg visible-sm">
+                        <div id="logo-img" alt="Logo image"> </div>
+                    </a>
+                    <div class="navbar-brand visible-xs">
+                        <a href="index.html">
+                            <h1>RUIPI</h1>
+                        </a>
+                    </div>
+
+                    <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+
+                    </button>
+                </div>
+                <!--Menu Header-->
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li id="navHomeButton">
+                            <a href="index.html">
+                                <span class=" glyphicon glyphicon-home">
+                                </span>
+                                <br class="hidden-xs"> Home
+                            </a>
+                        </li>
+                        <li id="navHomeButton">
+                            <a href="#" onclick="$ruipi.loadAbout();">
+                                <span class="glyphicon glyphicon-leaf">
+                                </span>
+                                <br class="hidden-xs"> About RUIPI
+                            </a>
+                        </li>
+                        <li id="navHomeButton">
+                            <a href="#" onclick="$ruipi.loadBlog();">
+                                <span class="glyphicon glyphicon-comment">
+                                </span>
+                                <br class="hidden-xs"> Blog
+                            </a>
+                        </li>
+                        <li class="contact" id="navHomeButton">
+                            <a href="#" onclick="$ruipi.loadContact();">
+                                <span class="glyphicon glyphicon-envelope">
+                                </span>
+                                <br class="hidden-xs"> Contact us
+                            </a>
+                        </li>
+                        <li id="navHomeButton">
+                            <a href="#" class="donate-us" onclick="$ruipi.loadDonate();">
+                                <span class="glyphicon glyphicon-heart remove">
+                                </span>
+                                <br class="hidden-xs"> Donate us
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--End Menu Header-->
+
+            </div>
+        </nav>
+    </header><!-- End of Header -->
+
+
+    <!-- Main content -->
+    <main>
+    </main><!-- End of #main-content -->
+
+    <!-- Donations Template -->
+    <div id="remove" class="container hide-donation">
+        <section id="donation" class="donation"></section>
+        <template id="donation-template">
+            <figure class="donate">
+                <img>
+                <figcaption></figcaption>
+            </figure>
+        </template>
+    </div>
+    <!-- End Of Donations Template -->
+
+    <!--Footer-->
+    <footer id="foot" class="panel-footer">
+
+        <!--Social-->
+        <div class="container">
+            <div class="social-container">
+                <u>
+                    <li>
+                        <a href="https://github.com/dflr10/RUIPI/tree/master/src" target="_blank"
+                            rel="noopener noreferrer" class="github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/dflr10" target="_blank" rel="noopener noreferrer" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </u>
+            </div>
+        </div>
+        <!--End of Social-->
+
+
+        <div class="container">
+            <div class="row">
+                <section class="col-sm-3">
+                    <a href="#" onclick="$ruipi.loadContact();">Contact us</a>
+                </section>
+
+                <section class="col-sm-3">
+                    <a href="#" onclick="$ruipi.loadBlog();">Blog</a>
+                    <hr class="visible-xs">
+                </section>
+
+                <section class="col-sm-3">
+                    <a href="#" onclick="$ruipi.loadDonate();">Donate us</a>
+                </section>
+
+                <section class="col-sm-3">
+                    <a href="#" onclick="$ruipi.loadAbout();">About</a>
+                    <hr class="visible-xs">
+                </section>
+            </div>
+            <div class="text-center">&copy; Copyright RUIPI Enterprise 2020</div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script.js"> </script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/stripe-checkout.js" type="module"></script>
+    </div>
+</body>
+
+</html>
