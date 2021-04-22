@@ -170,9 +170,6 @@ section h2 {
   .flex-item {
     flex: 0 0 50%;
   }
-  .flex-order-1 {
-    order: 1;
-  }
   .flex-row-reverse {
     flex-direction: row-reverse;
   }
