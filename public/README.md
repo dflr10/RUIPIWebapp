@@ -1,3 +1,3 @@
-# RUIPIWebsite
-Sitio web de la Aplicación RUIPI
-Nuestro sitio está publicado en https://dflr10.github.io/RUIPIWebapp/
+# 🍃RUIPIWebapp
+
+![RUIPIWebapp Running](https://github.com/dflr10/RUIPIWebapp/blob/master/Animation.gif)
