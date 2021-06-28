@@ -358,12 +358,12 @@ a:hover {
   color: #00acee;
 }
 
-.github i {
+.linkedin i {
   color: #76d89e;
 }
-.github i:hover {
-  color: white;
-  background-color: black;
+.linkedin i:hover {
+  color: #0e76a8;
+  background-color: white;
   border-radius: 50%;
 }
 
