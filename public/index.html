@@ -23,7 +23,7 @@
         <nav id="header-nav" class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <a href="#" onclick="$ruipi.loadHome();" class="pull-left visible-md visible-lg visible-sm">
+                    <a href="index.html" class="pull-left visible-md visible-lg visible-sm">
                         <div id="logo-img" alt="Logo image"> </div>
                     </a>
                     <div class="navbar-brand visible-xs">
@@ -53,28 +53,28 @@
                                 <br class="hidden-xs"> Home
                             </a>
                         </li>
-                        <li id="navHomeButton">
+                        <li id="navAboutButton">
                             <a href="#" onclick="$ruipi.loadAbout();">
                                 <span class="glyphicon glyphicon-leaf">
                                 </span>
                                 <br class="hidden-xs"> About RUIPI
                             </a>
                         </li>
-                        <li id="navHomeButton">
+                        <li id="navBlogButton">
                             <a href="#" onclick="$ruipi.loadBlog();">
                                 <span class="glyphicon glyphicon-comment">
                                 </span>
                                 <br class="hidden-xs"> Blog
                             </a>
                         </li>
-                        <li class="contact" id="navHomeButton">
+                        <li id="navContactButton">
                             <a href="#" onclick="$ruipi.loadContact();">
                                 <span class="glyphicon glyphicon-envelope">
                                 </span>
                                 <br class="hidden-xs"> Contact us
                             </a>
                         </li>
-                        <li id="navHomeButton">
+                        <li id="navDonateButton">
                             <a href="#" class="donate-us" onclick="$ruipi.loadDonate();">
                                 <span class="glyphicon glyphicon-heart remove">
                                 </span>
@@ -113,19 +113,13 @@
         <!--Social-->
         <div class="container">
             <div class="social-container">
-                <u>
-                    <li>
-                        <a href="https://www.linkedin.com/in/daniel-felipe-lozada-ramirez-28b239115/" target="_blank"
-                            rel="noopener noreferrer" class="linkedin">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/dflr10" target="_blank" rel="noopener noreferrer" class="twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                </u>
+                <a href="https://www.linkedin.com/in/daniel-felipe-lozada-ramirez-28b239115/" target="_blank"
+                    rel="noopener noreferrer" class="linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/dflr10" target="_blank" rel="noopener noreferrer" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
             </div>
         </div>
         <!--End of Social-->
@@ -134,11 +128,11 @@
         <div class="container">
             <div class="row">
                 <section class="col-sm-3">
-                    <a href="#" onclick="$ruipi.loadContact();">Contact us</a>
+                    <a href="#" class="link link-contact" onclick="$ruipi.loadContact();">Contact us</a>
                 </section>
 
                 <section class="col-sm-3">
-                    <a href="#" onclick="$ruipi.loadBlog();">Blog</a>
+                    <a href="#" class="link link-blog" onclick="$ruipi.loadBlog();">Blog</a>
                     <hr class="visible-xs">
                 </section>
 
@@ -147,7 +141,7 @@
                 </section>
 
                 <section class="col-sm-3">
-                    <a href="#" onclick="$ruipi.loadAbout();">About</a>
+                    <a href="#" class="link link-about" onclick="$ruipi.loadAbout();">About</a>
                     <hr class="visible-xs">
                 </section>
             </div>

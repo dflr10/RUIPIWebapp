@@ -344,6 +344,18 @@ section h2 {
 }
 
 /*Social Icons*/
+i {
+  font-size: 1.6em;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+i.fa-linkedin {
+  margin-right: 2.5rem;
+}
+i.fa-twitter {
+  margin-left: 2.5rem;
+}
+
 a {
   color: #76d89e;
 }
