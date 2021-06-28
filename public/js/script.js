@@ -46,7 +46,6 @@ $(function () {
   // On page load (before images or CSS)
   document.addEventListener("DOMContentLoaded", function (event) {
     // On first load, show home view
-
     showLoading("main");
     $ajaxUtils.sendGetRequest(
       homeHtml,
@@ -55,6 +54,18 @@ $(function () {
       },
       false
     );
+
+    //Load the home view
+    ruipi.loadHome = function () {
+      showLoading("main");
+      $ajaxUtils.sendGetRequest(
+        homeHtml,
+        function (responseText) {
+          document.querySelector("main").innerHTML = responseText;
+        },
+        false
+      );
+    };
 
     // Load the contact view
     ruipi.loadContact = function () {
