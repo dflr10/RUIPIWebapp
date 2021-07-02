@@ -23,8 +23,8 @@ $(function () {
 
   //Active li menu
   $(selector).on("click", function () {
-    $(selector).removeClass("active");
-    $(this).addClass("active");
+    $(selector).removeClass("active-section");
+    $(this).addClass("active-section");
   });
 
   // Convenience function for inserting innerHTML for 'select'
@@ -120,7 +120,7 @@ $(function () {
       );
     };
     const $home = document.getElementById("navHomeButton");
-    $home.classList.add("active");
+    $home.classList.add("active-section");
   });
 
   global.$ruipi = ruipi;
@@ -194,21 +194,18 @@ function contactValidations() {
 
 d.addEventListener("click", (e) => {
   //Set or remove current section class active
-  if (e.target.matches("li")) {
-    $("li").removeClass("active");
-  }
 
   if (e.target.matches(".link")) {
-    $("li").removeClass("active");
+    $("li").removeClass("active-section");
   }
 
   if (e.target.matches(".link-contact")) {
-    d.getElementById("navContactButton").classList.add("active");
+    d.getElementById("navContactButton").classList.add("active-section");
   }
   if (e.target.matches(".link-about")) {
-    d.getElementById("navAboutButton").classList.add("active");
+    d.getElementById("navAboutButton").classList.add("active-section");
   }
   if (e.target.matches(".link-blog")) {
-    d.getElementById("navBlogButton").classList.add("active");
+    d.getElementById("navBlogButton").classList.add("active-section");
   }
 });

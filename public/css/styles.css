@@ -59,7 +59,7 @@ button:hover {
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
 }
-#nav-list .active a {
+#nav-list .active-section a {
   color: #25333d;
   background-color: #e8f6f3;
 }
